@@ -54,6 +54,10 @@ public abstract class Loan {
         return interestRate;
     }
 
+    public BigDecimal getMonthlyInstallment() {
+        return monthlyInstallment;
+    }
+
 //Se crea el metodo que permite que las subclases registren la cuota calculada
     protected final void setMonthlyInstallment(BigDecimal monthlyInstalmennt) {
         if (monthlyInstallment == null || monthlyInstallment.compareTo(BigDecimal.ZERO) < 0 ) {
